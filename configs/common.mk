@@ -1,20 +1,12 @@
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
-
-# T-Mobile theme engine
-include vendor/aokp/configs/themes_common.mk
+PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 
 PRODUCT_PACKAGES += \
-    MusicFX \
-    MusicVisualization \
-    NoiseField \
-    ROMControl \
+    AOCPWallpapers \
     PhaseBeam \
     su \
     AppWidgetPicker \
-    openvpn \
-    SwagPapers \
-    AOKPtips
+    openvpn \ 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -29,49 +21,58 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/aokp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
-    vendor/aokp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
-    vendor/aokp/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/aokp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/aokp/prebuilt/common/app/UnicornPorn.apk:system/app/UnicornPorn.apk
-    
+    vendor/aocp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
+    vendor/aocp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
+    vendor/aocp/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
+    vendor/aocp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
+    vendor/aocp/prebuilt/common/app/AoCP.apk:system/app/AoCP.apk \
+    vendor/aocp/prebuilt/common/app/AoCPOTA.apk:system/app/AoCPOTA.apk \
+	vendor/aocp/prebuilt/common/app/com.dlto.atom.launcher-1.apk:system/app/com.dlto.atom.launcher-1.apk \
+	vendor/aocp/prebuilt/common/app/com.ss.launcher-1.apk:system/app/com.ss.launcher-1.apk \
+	vendor/aocp/prebuilt/common/app/JellyBeanWalls.apk:system/app/JellyBeanWalls.apk \
+	vendor/aocp/prebuilt/common/app/Memo-0-1.5.apk:system/app/Memo-0-1.5.apk \
+	vendor/aocp/prebuilt/common/app/SemcMusic.apk:system/app/SemcMusic.apk \
+	vendor/aocp/prebuilt/common/app/SemcMusicVisualizer.apk:system/app/SemcMusicVisualizer.apk \
+	vendor/aocp/prebuilt/common/app/SemcNotes.apk:system/app/SemcNotes.apk \
+	vendor/aocp/prebuilt/common/app/SeraphimLiveWall.apk:system/app/SeraphimLiveWall.apk 
+	
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/aokp/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
-    vendor/aokp/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
-    vendor/aokp/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
-    vendor/aokp/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
-    vendor/aokp/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
-    vendor/aokp/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
-    vendor/aokp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/aokp/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
-    vendor/aokp/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/aokp/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
-    vendor/aokp/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/aokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
+    vendor/aocp/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/aocp/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/aocp/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/aocp/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/aocp/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/aocp/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/aocp/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/aocp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/aocp/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/aocp/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/aocp/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
+    vendor/aocp/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/aocp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
     
 # Cron
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-    vendor/aokp/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-    vendor/aokp/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-    vendor/aokp/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-    vendor/aokp/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-    vendor/aokp/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-    vendor/aokp/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
+    vendor/aocp/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/aocp/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+    vendor/aocp/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/aocp/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+    vendor/aocp/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+    vendor/aocp/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+    vendor/aocp/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
     
 # Adding files needed for extra camera features
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aokp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/aokp/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
-    vendor/aokp/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
-    vendor/aokp/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
-    vendor/aokp/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
-    vendor/aokp/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
-    vendor/aokp/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
+    vendor/aocp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/aocp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/aocp/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
+    vendor/aocp/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
+    vendor/aocp/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
+    vendor/aocp/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
+    vendor/aocp/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
+    vendor/aocp/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -88,7 +89,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Inherit common build.prop overrides
--include vendor/aokp/configs/common_versions.mk
+-include vendor/aocp/configs/common_versions.mk
 
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
