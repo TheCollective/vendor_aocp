@@ -4,7 +4,11 @@ $(call inherit-product, device/samsung/quincyatt/full_quincyatt.mk)
 $(call inherit-product, vendor/aocp/configs/gsm.mk)
 
 # Inherit some common aocp stuff.
-$(call inherit-product, vendor/aocp/configs/common_full_phone.mk)
+$(call inherit-product, vendor/aocp/configs/common_phone.mk)
+
+# Camera
+PRODUCT_PACKAGES += \
+    Camera
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I717 BUILD_FINGERPRINT="samsung/SGH-I717/SGH-I717:4.0.3/IML74K/UCLD4:eng/test-keys" PRIVATE_BUILD_DESC="SGH-I717-eng 4.0.3 IML74K UCLD4 test-keys"
 
