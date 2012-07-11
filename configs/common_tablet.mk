@@ -1,7 +1,7 @@
 # Inherit common tuff
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aocp/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common_tablets
+PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common_tablets
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -18,4 +18,4 @@ PRODUCT_PACKAGES += \
         Trebuchet
 
 # Inherit drm blobs
--include vendor/aokp/configs/common_drm_tablet.mk
+-include vendor/aocp/configs/common_drm_tablet.mk
