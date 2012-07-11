@@ -3,16 +3,16 @@ $(call inherit-product, device/samsung/captivatemtd/full_captivatemtd.mk)
 # Release name
 PRODUCT_RELEASE_NAME := captivate
 
-$(call inherit-product, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product, vendor/aocp/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aocp/configs/gsm.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/aries-common
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := captivatemtd
-PRODUCT_NAME := aokp_captivatemtd
+PRODUCT_NAME := aocp_captivatemtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SGH-I897
 
@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I897 TARGET_DEVICE=SGH-I897 BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+	vendor/aocp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
