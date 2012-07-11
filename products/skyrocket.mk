@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/skyrocket/full_skyrocket.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product, vendor/aocp/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aocp/configs/gsm.mk)
 
 # skyrocket overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/skyrocket
+PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/skyrocket
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_skyrocket
+PRODUCT_NAME := aocp_skyrocket
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := skyrocket
 PRODUCT_MODEL := SGH-I727
