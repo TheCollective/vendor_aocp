@@ -1,9 +1,5 @@
-$(call inherit-product, vendor/aokp/configs/common.mk)
-
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
-
+$(call inherit-product, vendor/aocp/configs/common.mk
 
 # Inherit drm blobs
--include vendor/aokp/configs/common_drm_phone.mk
+-include vendor/aocp/configs/common_drm_phone.mk
 
