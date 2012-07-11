@@ -10,6 +10,10 @@ $(call inherit-product, vendor/aocp/configs/common_phone.mk)
 PRODUCT_PACKAGES += \
     Camera
 
+#bootanimation
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/bootanimation/bootanimation_800_1280.zip:system/media/bootanimation.zip
+
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I717 BUILD_FINGERPRINT="samsung/SGH-I717/SGH-I717:4.0.3/IML74K/UCLD4:eng/test-keys" PRIVATE_BUILD_DESC="SGH-I717-eng 4.0.3 IML74K UCLD4 test-keys"
 
 TARGET_BOOTANIMATION_NAME := bootanimation_1280_800
