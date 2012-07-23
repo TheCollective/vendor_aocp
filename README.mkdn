@@ -27,13 +27,19 @@ After the sync is finished, please read the [instructions from the Android site]
 
 Once you've read that, you can build with
 
-    mka
+    . build/envsetup && brunch (device name)
 
-This will compile everything and use the correct "-j#" flag.
+Or You can build with
 
-You can also build a flashable zip with
+    . build/envsetup
 
-    mka otapackage
+then
+
+    brunch
+
+then
+
+    choose your poison
     
     
 Special Thanks
