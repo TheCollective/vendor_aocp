@@ -6,13 +6,17 @@ PRODUCT_RELEASE_NAME := Infuse4G
 
 TARGET_BOOTANIMATION_NAME := bootanimation_480_800
 
-# Inherit some common CM stuff.
+# Inherit some common aocp stuff.
 $(call inherit-product, vendor/aocp/configs/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/infuse4g/full_infuse4g.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/aries-common
+
+# Camera
+PRODUCT_PACKAGES += \
+    Camera
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := infuse4g

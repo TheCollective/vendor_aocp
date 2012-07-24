@@ -12,7 +12,8 @@ PRODUCT_PACKAGES += \
 
 #bootanimation
 PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
+        vendor/aocp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip \
+        vendor/aocp/prebuilt/common/app/Memo-0-1.5.apk:system/app/Memo-0-1.5.apk 
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I717 BUILD_FINGERPRINT="samsung/SGH-I717/SGH-I717:4.0.3/IML74K/UCLD4:eng/test-keys" PRIVATE_BUILD_DESC="SGH-I717-eng 4.0.3 IML74K UCLD4 test-keys"
 
