@@ -9,6 +9,10 @@ $(call inherit-product, vendor/aocp/configs/common_phone.mk)
 # Camera
 PRODUCT_PACKAGES += \
     Camera
+	
+# S-Pen App
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/Memo-0-1.5.apk:system/app/Memo-0-1.5.apk
 
 #bootanimation
 PRODUCT_COPY_FILES += \
