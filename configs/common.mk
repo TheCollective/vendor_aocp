@@ -26,12 +26,8 @@ PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/aocp/prebuilt/common/app/AoCP.apk:system/app/AoCP.apk \
     vendor/aocp/prebuilt/common/app/AoCPOTA.apk:system/app/AoCPOTA.apk \
-    vendor/aocp/prebuilt/common/app/com.ss.launcher-1.apk:system/app/com.ss.launcher-1.apk \
-    vendor/aocp/prebuilt/common/app/JellyBeanWalls.apk:system/app/JellyBeanWalls.apk \
     vendor/aocp/prebuilt/common/app/SemcMusic.apk:system/app/SemcMusic.apk \
-    vendor/aocp/prebuilt/common/app/SemcMusicVisualizer.apk:system/app/SemcMusicVisualizer.apk \
-    vendor/aocp/prebuilt/common/app/SemcNotes.apk:system/app/SemcNotes.apk \
-    vendor/aocp/prebuilt/common/app/SeraphimLiveWall.apk:system/app/SeraphimLiveWall.apk 
+    vendor/aocp/prebuilt/common/app/SemcMusicVisualizer.apk:system/app/SemcMusicVisualizer.apk 
 	
 # init.d
 PRODUCT_COPY_FILES += \
