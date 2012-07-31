@@ -2,6 +2,7 @@
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 
 PRODUCT_PACKAGES += \
+    AoCP \
     AOCPWallpapers \
     PhaseBeam \
     su \
@@ -24,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
     vendor/aocp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
-    vendor/aocp/prebuilt/common/app/AoCP.apk:system/app/AoCP.apk \
     vendor/aocp/prebuilt/common/app/AoCPOTA.apk:system/app/AoCPOTA.apk \
     vendor/aocp/prebuilt/common/app/Memo-0-1.5.apk:system/app/Memo-0-1.5.apk \
     vendor/aocp/prebuilt/common/app/SemcMusic.apk:system/app/SemcMusic.apk \
