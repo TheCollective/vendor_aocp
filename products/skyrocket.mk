@@ -25,5 +25,5 @@ PRODUCT_PACKAGES += \
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+	vendor/aocp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 
