@@ -9,4 +9,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/n7000.mk \
     $(LOCAL_DIR)/skyrocket.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
+    $(LOCAL_DIR)/spyder.mk \
     
