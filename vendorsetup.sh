@@ -9,3 +9,4 @@ add_lunch_combo aocp_quincyatt-userdebug
 add_lunch_combo aocp_n7000-userdebug
 add_lunch_combo aocp_skyrocket-userdebug
 add_lunch_combo aocp_vibrantmtd-userdebug
+add_lunch_combo aocp_spyder-userdebug
