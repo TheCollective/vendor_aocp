@@ -4,7 +4,7 @@ $(call inherit-product, device/motorola/spyder/device_spyder.mk)
 # Inherit some common aocp stuff.
 $(call inherit-product, vendor/aocp/configs/common_phone.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common aocp stuff.
 #$(call inherit-product, vendor/aocp/configs/gsm.mk)
 
 #
