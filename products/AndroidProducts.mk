@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/crespo.mk \
     $(LOCAL_DIR)/captivatemtd.mk \
-	$(LOCAL_DIR)/d2att.mk \
+    $(LOCAL_DIR)/d2att.mk \
     $(LOCAL_DIR)/fascinatemtd.mk \
     $(LOCAL_DIR)/galaxysmtd.mk \
     $(LOCAL_DIR)/infuse4g.mk \
