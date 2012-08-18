@@ -35,7 +35,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aokp/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aocp/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -144,7 +144,7 @@ rm -rf $REPACK/ota/recovery
 #MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
 #VERSION=`cat "vendor/aokp/configs/common_versions.mk" | grep ro.aokp.version | head -1 | cut -f2 -d '=' | cut -f3 -d '_'`
 DATE=$(date +%h-%d-%y)
-MODVERSION="$TARGET_PRODUCT"_"$PRODUCT_VERSION_MAINTENANCE"
+MODVERSION="$TARGET_PRODUCT"_"$DATE"
 OUTFILE=$OUT/$MODVERSION.zip
 
 # Pack it up and sign
