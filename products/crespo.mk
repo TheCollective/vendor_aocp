@@ -2,13 +2,13 @@
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product, vendor/aocp/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aocp/configs/gsm.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_crespo
+PRODUCT_NAME := aocp_crespo
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := crespo
 PRODUCT_MODEL := Nexus S
@@ -20,4 +20,4 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+    vendor/aocp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
