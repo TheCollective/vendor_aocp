@@ -1,6 +1,6 @@
 add_lunch_combo aokp_crespo-userdebug
 add_lunch_combo aokp_d2att-userdebug
 add_lunch_combo aokp_maguro-userdebug
-add_lunch_combo aokp_quincyatt-userdebug
+add_lunch_combo aocp_quincyatt-userdebug
 add_lunch_combo aokp_toro-userdebug
 
