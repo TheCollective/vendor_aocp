@@ -8,6 +8,7 @@ PRODUCT_PACKAGES += \
     AoCP \
     AppWidgetPicker \
     LatinImeDictionary \
+    Music \
     MusicFX \
     MusicVisualization \
     NoiseField \
