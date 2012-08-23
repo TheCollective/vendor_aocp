@@ -7,6 +7,7 @@ PRODUCT_PACKAGES += \
     AOCPWallpapers \
     AoCP \
     AppWidgetPicker \
+    Aspire \
     LatinImeDictionary \
     Music \
     MusicFX \
