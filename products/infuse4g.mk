@@ -14,6 +14,10 @@ $(call inherit-product, device/samsung/infuse4g/full_infuse4g.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/aries-common
 
+# OTA
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/hdpi/AoCPOTA.apk:system/app/AoCP.apk
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := infuse4g
 PRODUCT_NAME := aocp_infuse4g

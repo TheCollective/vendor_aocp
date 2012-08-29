@@ -4,8 +4,8 @@ $(call inherit-product-if-exists, vendor/aocp/prebuilt/prebuilts.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 
 PRODUCT_PACKAGES += \
-    AOCPWallpapers \
     AoCP \
+    AOCPWallpapers \
     AppWidgetPicker \
     Aspire \
     LatinImeDictionary \

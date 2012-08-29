@@ -14,6 +14,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/Memo-0-1.5.apk:system/app/Memo-0-1.5.apk
 
+#OTA
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/xhdpi/AoCPOTA.apk:system/app/AoCP.apk
+
 #bootanimation
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
