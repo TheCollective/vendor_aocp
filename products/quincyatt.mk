@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += \
 
 #OTA
 PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/common/app/xhdpi/AoCPOTA.apk:system/app/AoCP.apk
+        vendor/aocp/prebuilt/common/app/xhdpi/AoCPOTA.apk:system/app/AoCPOTA.apk
 
 #bootanimation
 PRODUCT_COPY_FILES += \
