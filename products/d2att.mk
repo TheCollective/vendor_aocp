@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += \
 
 #OTA
 PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/common/app/xhdpi/AoCPOTA.apk:system/app/AoCP.apk
+        vendor/aocp/prebuilt/common/app/xhdpi/AoCPOTA.apk:system/app/AoCPOTA.apk
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2uc TARGET_DEVICE=d2att BUILD_FINGERPRINT="d2uc-user 4.0.4 IMM76D I747UCALEM release-keys" PRIVATE_BUILD_DESC="samsung/d2uc/d2att:4.0.4/IMM76D/I747UCALEM:user/release-keys"
 
