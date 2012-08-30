@@ -16,7 +16,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/aries-common
 
 # OTA
 PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/common/app/hdpi/AoCPOTA.apk:system/app/AoCP.apk
+        vendor/aocp/prebuilt/common/app/hdpi/AoCPOTA.apk:system/app/AoCPOTA.apk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := infuse4g
