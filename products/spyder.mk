@@ -17,9 +17,6 @@ vendor/aocp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootan
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := DROID RAZR
-
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=xt910 TARGET_DEVICE=xt910 BUILD_ID=IMM76D BUILD_FINGERPRINT="RTGB/umts_spyder_umts/umts_spyder:4.0.4_r1.2/IMM76D/20120807:user/release-keys" PRIVATE_BUILD_DESC="umts_spyder-user 4.0.4_r1.2 IMM76D 20120807 release-keys"
-  
    
 PRODUCT_NAME := aocp_spyder
 PRODUCT_DEVICE := spyder
