@@ -1,5 +1,5 @@
 # Inherit device configuration for VZW Droid RAZR.
-$(call inherit-product, device/motorola/spyder/device_spyder.mk)
+$(call inherit-product, device/moto/spyder/device_spyder.mk)
 
 # Inherit some common aocp stuff.
 $(call inherit-product, vendor/aocp/configs/common_phone.mk)
