@@ -1,4 +1,4 @@
-Android Open Kang Project
+Android Open Collective Project
 =========================
 
 
@@ -12,7 +12,7 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u https://github.com/AOKP/platform_manifest.git -b jb
+    repo init -u https://github.com/xAOCPx/platform_manifest.git -b jellybean
 
 Then to sync up:
 
@@ -27,17 +27,8 @@ After the sync is finished, please read the [instructions from the Android site]
 
 Once you've read that, you can build with
 
-    mka
+    . build.sh (device)
 
-This will compile everything and use the correct "-j#" flag.
 
-You can also build a flashable zip with
-
-    mka bacon
-    
-    
-Special Thanks
---------------
-Huge shout out to [@peteralfonzo](http://twitter.com/peteralfonso) for his wonderfully clean vendor tree to use as a base. This makes this infinitely more oragnized and easier to work with. Thank him!
 
 
