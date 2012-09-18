@@ -1,0 +1,8 @@
+add_lunch_combo aocp_ace-userdebug
+add_lunch_combo aocp_crespo-userdebug
+add_lunch_combo aocp_captivatemtd-userdebug
+add_lunch_combo aocp_d2att-userdebug
+add_lunch_combo aocp_maguro-userdebug
+add_lunch_combo aocp_quincyatt-userdebug
+add_lunch_combo aocp_toro-userdebug
+

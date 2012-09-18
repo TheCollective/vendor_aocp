@@ -1,0 +1,34 @@
+Android Open Collective Project
+=========================
+
+
+
+
+
+Getting Started
+---------------
+
+Please see the [Android source page](http://source.android.com/source/index.html) for building instructions.
+
+To initialize your local repository using my trees, use the following command:
+
+    repo init -u https://github.com/xAOCPx/platform_manifest.git -b jellybean
+
+Then to sync up:
+
+    repo sync
+
+
+
+Building
+--------
+
+After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
+
+Once you've read that, you can build with
+
+    . build.sh (device)
+
+
+
+
