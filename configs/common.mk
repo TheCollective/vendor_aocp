@@ -1,5 +1,8 @@
 $(call inherit-product-if-exists, vendor/aocp/prebuilt/prebuilts.mk)
 
+# T-Mobile theme engine
+include vendor/aocp/configs/themes_common.mk
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 
