@@ -17,7 +17,6 @@ PRODUCT_PACKAGES += \
     MusicVisualization \
     NoiseField \
     openvpn \
-    PhaseBeam \
     SuperSU 
 
 # Use prebuilt su until fixed when built
