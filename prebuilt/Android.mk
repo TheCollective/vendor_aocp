@@ -28,7 +28,7 @@ LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Microbes
+LOCAL_MODULE := FileManager
 LOCAL_MODULE_OWNER := aocp
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
@@ -38,7 +38,7 @@ LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := NovaLauncher
+LOCAL_MODULE := AoCPLiveWall
 LOCAL_MODULE_OWNER := aocp
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
@@ -58,7 +58,7 @@ LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Thinkfree
+LOCAL_MODULE := TitaniumBackup
 LOCAL_MODULE_OWNER := aocp
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
@@ -68,7 +68,7 @@ LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := UnicornPorn
+LOCAL_MODULE := com.adobe.air-1
 LOCAL_MODULE_OWNER := aocp
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
