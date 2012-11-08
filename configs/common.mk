@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
     MusicVisualization \
     NoiseField \
     openvpn \
+    QuietTime \
     SuperSU 
 
 # Use prebuilt su until fixed when built
