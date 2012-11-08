@@ -24,6 +24,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/xbin/su:system/xbin/su
 
+# PackagesAppsPrebuilts that common for all devices
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/AoCPLiveWall.apk:system/app/AoCPLiveWall.apk \
+        vendor/aocp/prebuilt/common/app/com.adobe.air-1.apk:system/app/com.adobe.air-1.apk \
+        vendor/aocp/prebuilt/common/app/com.adobe.flashplayer-1.apk:system/app/com.adobe.flashplayer-1.apk \
+        vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
+        vendor/aocp/prebuilt/common/app/TitanumBackup.apk:system/app/TitanumBackup.apk \
+        vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
