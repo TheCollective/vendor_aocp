@@ -17,7 +17,17 @@ PRODUCT_PACKAGES += \
     MusicVisualization \
     NoiseField \
     openvpn \
+    QuietTime \
     SuperSU 
+
+# PackagesAppsPrebuilts that common for all devices
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/AoCPLiveWall.apk:system/app/AoCPLiveWall.apk \
+        vendor/aocp/prebuilt/common/app/com.adobe.air-1.apk:system/app/com.adobe.air-1.apk \
+        vendor/aocp/prebuilt/common/app/com.adobe.flashplayer-1.apk:system/app/com.adobe.flashplayer-1.apk \
+        vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
+        vendor/aocp/prebuilt/common/app/TitaniumBackup.apk:system/app/TitaniumBackup.apk \
+        vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
