@@ -5,6 +5,6 @@ add_lunch_combo aocp_d710-userdebug
 add_lunch_combo aocp_d2att-userdebug
 add_lunch_combo aocp_maguro-userdebug
 add_lunch_combo aocp_quincyatt-userdebug
-add_lunch_combo aocp_skyrocket_userdebug
+add_lunch_combo aocp_skyrocket-userdebug
 add_lunch_combo aocp_toro-userdebug
 
