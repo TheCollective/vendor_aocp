@@ -8,3 +8,4 @@ add_lunch_combo aocp_quincyatt-userdebug
 add_lunch_combo aocp_skyrocket-userdebug
 add_lunch_combo aocp_toro-userdebug
 add_lunch_combo aocp_holiday-userdebug
+add_lunch_combo aocp_mako-userdebug
