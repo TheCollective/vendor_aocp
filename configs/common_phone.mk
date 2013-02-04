@@ -1,7 +1,10 @@
-$(call inherit-product, vendor/aocp/configs/common.mk)
+$(call inherit-product, vendor/aocp/configs/common_full.mk)
 
 # Inherit drm blobs
 -include vendor/aocp/configs/common_drm_phone.mk
+
+PRODUCT_PACKAGES += \
+  Mms
 
 # BT config
 PRODUCT_COPY_FILES += \
