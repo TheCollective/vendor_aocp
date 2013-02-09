@@ -1,5 +1,5 @@
 # Inherit common CM stuff
-$(call inherit-product, vendor/aocp/configs/common.mk)
+$(call inherit-product, vendor/aocp/config/common.mk)
 
 # Bring in all audio files
 include frameworks/base/data/sounds/NewAudio.mk
@@ -10,7 +10,6 @@ include frameworks/base/data/sounds/AudioPackageNewWave.mk
 # Bring in all video files
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
-# Include CM audio files
 
 
 # Optional CM packages

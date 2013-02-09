@@ -39,9 +39,6 @@
   <apn carrier="KPN" mcc="204" mnc="08" apn="internet" user="kpn" password="gprs" type="default,supl" />
   <apn carrier="KPN" mcc="204" mnc="08" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="KPN MMS" mcc="204" mnc="08" apn="portalmmm.nl" proxy="10.10.100.20" port="5080" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="mms" />
-  <apn carrier="TELFORT" mcc="204" mnc="12" apn="internet" type="default,supl" />
-  <apn carrier="Telfort" mcc="204" mnc="12" apn="internet" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="TELFORT MMS" mcc="204" mnc="12" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="9201" type="mms" />
   <apn carrier="Telfort" mcc="204" mnc="12" apn="internet" proxy="193.113.200.195" port="8080" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
   <apn carrier="T-Mobile NL" mcc="204" mnc="16" apn="internet" type="default,supl" />
   <apn carrier="T-Mobile NL-MMS" mcc="204" mnc="16" apn="mms" user="tmobilemms" password="tmobilemms" server="*" mmsc="http://t-mobilemms" mmsproxy="010.010.010.011" mmsport="8080" type="mms" />
@@ -1316,9 +1313,9 @@
   <apn carrier="MTN SA Web" mcc="655" mnc="10" apn="internet" type="default,supl" />
   <apn carrier="MTN ZA" mcc="655" mnc="10" apn="myMTN" user="mtn" password="mtn" server="*" type="default,supl" />
   <apn carrier="MTN ZA MMS" mcc="655" mnc="10" apn="myMTN" user="mtnmms" password="mtnmms" mmsc="http://mms.mtn.co.za/mms/wapenc" mmsproxy="196.11.240.241" mmsport="8080" type="mms" />
-  <apn carrier="Movistar SV" mcc="706" mnc="04" apn="internet.movistar.sv" user="movistarsv" password="movistarsv" type="default, supl" />
+  <apn carrier="Movistar SV" mcc="706" mnc="04" apn="internet.movistar.sv" user="movistarsv" password="movistarsv" type="default,supl" />
   <apn carrier="Movistar SV MMS" mcc="706" mnc="04" apn="mms.movistar.sv" user="movistarsv" password="movistarsv" mmsc="http://mms.movistar.sv" mmsproxy="10.12.20.1" mmsport="80" type="mms" />
-  <apn carrier="Movistar SV" mcc="706" mnc="040" apn="internet.movistar.sv" user="movistarsv" password="movistarsv" type="default, supl" />
+  <apn carrier="Movistar SV" mcc="706" mnc="040" apn="internet.movistar.sv" user="movistarsv" password="movistarsv" type="default,supl" />
   <apn carrier="Movistar SV MMS" mcc="706" mnc="040" apn="mms.movistar.sv" user="movistarsv" password="movistarsv" mmsc="http://mms.movistar.sv" mmsproxy="10.12.20.1" mmsport="80" type="mms" />
   <apn carrier="Cable and Wireless Panama" mcc="714" mnc="01" apn="apn01.cwpanama.com.pa" type="default,supl" />
   <apn carrier="Cable and Wireless Panama MMS" mcc="714" mnc="01" apn="apn02.cwpanama.com.pa" mmsc="http://mms.zonamovil.com.pa:80/i.bin" mmsproxy="172.25.3.5" mmsport="8080" type="mms" />
