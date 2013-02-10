@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/com.adobe.air-1.apk:system/app/com.adobe.air-1.apk \
         vendor/aocp/prebuilt/common/app/com.adobe.flashplayer-1.apk:system/app/com.adobe.flashplayer-1.apk \
         vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
-        vendor/aocp/prebuilt/common/app/TitaniumBackup.apk:system/app/TitaniumBackup.apk \
         vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk
     
 
@@ -138,14 +137,19 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 1
 
+AOCP_VERSION_MAJOR = 5
+AOCP_VERSION_MINOR = 0
 
 
 
+
+    AOCP_VERSION := $(AOCP_VERSION_MAJOR).$(AOCP_VERSION_MINOR)
+    
     CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_VERSION) \
+  ro.aocp.version=$(AOCP_VERSION) \
   ro.modversion=$(CM_VERSION)
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
