@@ -30,9 +30,13 @@ PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/com.adobe.air-1.apk:system/app/com.adobe.air-1.apk \
         vendor/aocp/prebuilt/common/app/com.adobe.flashplayer-1.apk:system/app/com.adobe.flashplayer-1.apk \
         vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
-        vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk
-    
+        vendor/aocp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
+        vendor/aocp/prebuilt/common/app/SuperSU.apk:system/app/SuperSU.apk
 
+# Use prebuilt su until fixed when built
+PRODUCT_COPY_FILES += \
+    vendor/aocp/prebuilt/common/xbin/su:system/xbin/su
+    
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
@@ -87,15 +91,13 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/aocp/config/themes_common.mk
 
-# Required CM packages
+# Required Aocp packages
 PRODUCT_PACKAGES += \
     Camera \
     Development \
-    LatinIME \
-    Superuser \
-    su
+    LatinIME 
 
-# Optional CM packages
+# Optional Aocp packages
 PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
@@ -105,8 +107,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     AOCPWallpapers \
-    AppWidgetPicker \
     LatinImeDictionary \
+    Launcher2 \
     Music \
     MusicFX \
     MusicVisualization \
@@ -116,7 +118,7 @@ PRODUCT_PACKAGES += \
     SuperSU 
 
 
-# Extra tools in CM
+# Extra tools in Aocp
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
