@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
+    DashClock \
     openvpn \
     QuietTime \
     SuperSU 
