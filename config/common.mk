@@ -167,5 +167,11 @@ PRODUCT_COPY_FILES += \
 
 endif
 
+ifeq ($(PRODUCT_DEVICE), captivatemtd)
+
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/flashlight.apk:system/app/flashlight.apk
+
+endif
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
