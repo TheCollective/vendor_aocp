@@ -105,7 +105,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AOCPWallpapers \
     LatinImeDictionary \
-    Launcher2 \
+    Aspire \
     Music \
     MusicFX \
     MusicVisualization \
