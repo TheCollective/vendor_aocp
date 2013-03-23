@@ -28,8 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/AoCPLiveWall.apk:system/app/AoCPLiveWall.apk \
         vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
-        vendor/aocp/prebuilt/common/app/SuperSU.apk:system/app/SuperSU.apk \
-        vendor/aocp/prebuilt/common/app/MrUpdater-Headless.apk:system/app/MrUpdater-Headless.apk
+        vendor/aocp/prebuilt/common/app/SuperSU.apk:system/app/SuperSU.apk
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
