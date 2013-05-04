@@ -27,7 +27,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PackagesAppsPrebuilts that common for all devices
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/AoCPLiveWall.apk:system/app/AoCPLiveWall.apk \
-        vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk
+        vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
+        vendor/aocp/prebuilt/common/app/SuperSU.apk:system/app/SuperSU.apk
+
+# Use prebuilt su until fixed when built
+PRODUCT_COPY_FILES += \
+    vendor/aocp/prebuilt/common/xbin/su:system/xbin/su
     
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -104,7 +109,8 @@ PRODUCT_PACKAGES += \
     NoiseField \
     DashClock \
     openvpn \
-    QuietTime 
+    QuietTime \
+    SuperSU 
 
 
 # Extra tools in Aocp
