@@ -135,7 +135,7 @@ PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 1
 
 AOCP_VERSION_MAJOR = 5
-AOCP_VERSION_MINOR = 8
+AOCP_VERSION_MINOR = 9.5
 
 
 
@@ -164,7 +164,7 @@ PRODUCT_COPY_FILES += \
 
 endif
 
-ifeq ($(PRODUCT_DEVICE), captivatemtd)
+ifeq ($(PRODUCT_NAME), aocp_captivatemtd)
 
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/flashlight.apk:system/app/flashlight.apk
