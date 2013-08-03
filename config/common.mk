@@ -86,11 +86,16 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/aocp/config/themes_common.mk
 
+# Embed SuperUser
+SUPERUSER_EMBEDDED := true
+
 # Required Aocp packages
 PRODUCT_PACKAGES += \
     Camera \
     Development \
-    LatinIME 
+    LatinIME \
+    Superuser \
+    su
 
 # Optional Aocp packages
 PRODUCT_PACKAGES += \
