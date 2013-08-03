@@ -21,6 +21,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+# Enable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+endif
+
 # Copy over the changelog to the device
 
 
@@ -56,10 +61,6 @@ PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/aocp/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-#    vendor/aocp/proprietary/Term.apk:system/app/Term.apk \
-#    vendor/aocp/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -132,10 +133,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 
 PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MINOR = 2
 
-AOCP_VERSION_MAJOR = 5
-AOCP_VERSION_MINOR = 9.5
+AOCP_VERSION_MAJOR = 6
+AOCP_VERSION_MINOR = 0
 
 
 
