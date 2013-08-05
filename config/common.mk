@@ -33,7 +33,6 @@ endif
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/AoCPLiveWall.apk:system/app/AoCPLiveWall.apk \
         vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
-        vendor/aocp/prebuilt/common/app/SuperSU.apk:system/app/SuperSU.apk
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
@@ -106,7 +105,6 @@ PRODUCT_PACKAGES += \
 
 
 PRODUCT_PACKAGES += \
-    AOCPWallpapers \
     LatinImeDictionary \
     Aspire \
     Music \
@@ -115,8 +113,7 @@ PRODUCT_PACKAGES += \
     NoiseField \
     DashClock \
     openvpn \
-    QuietTime \
-    SuperSU 
+    QuietTime 
 
 
 # Extra tools in Aocp
@@ -127,8 +124,8 @@ PRODUCT_PACKAGES += \
     tune2fs \
     bash 
     
-
-
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver
 
 # rsync
 PRODUCT_PACKAGES += \
