@@ -1,13 +1,12 @@
 PRODUCT_BRAND ?= cyanogenmod
 
-
+# Embed SuperUser
+-include vendor/cm-priv/keys.mk 
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
-
-
-
-
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -26,15 +25,10 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Copy over the changelog to the device
-
-
 # PackagesAppsPrebuilts that common for all devices
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/AoCPLiveWall.apk:system/app/AoCPLiveWall.apk \
         vendor/aocp/prebuilt/common/app/FileManager.apk:system/app/FileManager.apk \
-
-
     
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -82,9 +76,6 @@ PRODUCT_COPY_FILES += \
 
 # T-Mobile theme engine
 include vendor/aocp/config/themes_common.mk
-
-# Embed SuperUser
-SUPERUSER_EMBEDDED := true
 
 # Required Aocp packages
 PRODUCT_PACKAGES += \
