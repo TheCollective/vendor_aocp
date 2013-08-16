@@ -18,7 +18,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    service.adb.root=1 \
+    persist.sys.root_access=3
+
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
@@ -140,6 +143,7 @@ AOCP_VERSION_MINOR = 0
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.aocp.version=$(AOCP_VERSION) \
   ro.modversion=$(CM_VERSION)
+  ro.cm.version=$(CM_VERSION)
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
