@@ -11,7 +11,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf
 
-ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
-    PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
-endif
+PRODUCT_COPY_FILES += \
+    vendor/aocp/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+

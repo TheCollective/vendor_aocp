@@ -19,6 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
+    ro.build.selinux=1 \
     service.adb.root=1 \
     persist.sys.root_access=3
 
@@ -55,6 +56,9 @@ PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/aocp/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
+# SELinux filesystem labels
+PRODUCT_COPY_FILES += \
+    vendor/aocp/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -97,6 +101,7 @@ PRODUCT_PACKAGES += \
 
 
 PRODUCT_PACKAGES += \
+    AOCPWallpapers \
     LatinImeDictionary \
     Aspire \
     Music \
@@ -160,11 +165,13 @@ PRODUCT_COPY_FILES += \
 
 endif
 
-ifeq ($(PRODUCT_NAME), aocp_captivatemtd)
+
+ifeq ($(NEEDS_FLASHLIGHT), true)
 
 PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/flashlight.apk:system/app/flashlight.apk
 
 endif
 
+-include vendor/aocp/sepolicy/sepolicy.mk
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
