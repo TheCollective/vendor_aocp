@@ -11,7 +11,7 @@ add_lunch_combo aocp_skyrocket-userdebug
 add_lunch_combo aocp_toro-userdebug
 add_lunch_combo aocp_holiday-userdebug
 add_lunch_combo aocp_mako-userdebug
-add_lunch_combo aocp_t0lte-userdebug
+add_lunch_combo aocp_t0lteatt-userdebug
 add_lunch_combo aocp_d2spr-userdebug
 add_lunch_combo aocp_p5110-userdebug
 #
