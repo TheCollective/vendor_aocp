@@ -152,20 +152,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
-
-ifeq ($(PRODUCT_DEVICE), quincyatt)
-# S-Pen App
-PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/common/app/Memo-0-1.5.apk:system/app/Memo-0-1.5.apk
-
-
-#OTA
-PRODUCT_COPY_FILES += \
-        vendor/aocp/prebuilt/common/app/xhdpi/AoCPOTA.apk:system/app/AoCPOTA.apk
-
-endif
-
-
 ifeq ($(NEEDS_FLASHLIGHT), true)
 
 PRODUCT_COPY_FILES += \
