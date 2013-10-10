@@ -19,14 +19,14 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u https://github.com/TheCollective/platform_manifest.git -b jellybean2
+    repo init -u https://github.com/TheCollective/platform_manifest.git -b jellybean3
 
 To get started with Android/CyanogenMod/AoCP, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using this:
 
-    repo init -u git://github.com/TheCollective/platform_manifest.git -b jellybean2
+    repo init -u git://github.com/TheCollective/platform_manifest.git -b jellybean3
 
 Then to sync up:
 
