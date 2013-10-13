@@ -23,7 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     service.adb.root=1 \
     persist.sys.root_access=3
 
-
 # Disable excessive dalvik debug messages
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
@@ -105,7 +104,6 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Basic
 
-
 PRODUCT_PACKAGES += \
     AOCPWallpapers \
     LatinImeDictionary \
@@ -117,7 +115,6 @@ PRODUCT_PACKAGES += \
     DashClock \
     openvpn \
     QuietTime 
-
 
 # Extra tools in Aocp
 PRODUCT_PACKAGES += \
@@ -143,13 +140,9 @@ PRODUCT_VERSION_MINOR = 2
 AOCP_VERSION_MAJOR = 6
 AOCP_VERSION_MINOR = 2.2
 
-
-
-
     AOCP_VERSION := $(AOCP_VERSION_MAJOR).$(AOCP_VERSION_MINOR)
     
     CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
-
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.aocp.version=$(AOCP_VERSION) \
