@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     Basic
+    
 # DSPManager
 PRODUCT_PACKAGES += \
     DSPManager \
