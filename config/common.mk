@@ -114,7 +114,6 @@ PRODUCT_PACKAGES += \
     LatinImeDictionary \
     Aspire \
     Music \
-    MusicFX \
     MusicVisualization \
     NoiseField \
     DashClock \
