@@ -103,6 +103,11 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     Basic
+# DSPManager
+PRODUCT_PACKAGES += \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
 
 PRODUCT_PACKAGES += \
     AOCPWallpapers \
@@ -138,7 +143,7 @@ PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 2
 
 AOCP_VERSION_MAJOR = 6
-AOCP_VERSION_MINOR = 2.2
+AOCP_VERSION_MINOR = 3
 
     AOCP_VERSION := $(AOCP_VERSION_MAJOR).$(AOCP_VERSION_MINOR)
     
@@ -159,4 +164,3 @@ PRODUCT_COPY_FILES += \
 endif
 
 -include vendor/aocp/sepolicy/sepolicy.mk
--include $(WORKSPACE)/hudson/image-auto-bits.mk
