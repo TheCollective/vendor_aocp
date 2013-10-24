@@ -90,6 +90,7 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
+    BluetoothExt \
     Superuser \
     su
 
