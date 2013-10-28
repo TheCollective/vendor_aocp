@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
     AOCPWallpapers \
     LatinImeDictionary \
     Aspire \
-    Music \
+    Apollo \
     MusicVisualization \
     NoiseField \
     DashClock \
