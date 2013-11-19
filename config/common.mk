@@ -18,7 +18,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false \
+    ro.com.android.dataroaming=true
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     service.adb.root=1 \
     persist.sys.root_access=3
@@ -90,7 +91,6 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
-    BluetoothExt \
     Superuser \
     su
 
@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
-    Basic
+    Basic \
+    libemoji
     
 # DSPManager
 PRODUCT_PACKAGES += \
@@ -110,11 +111,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AOCPWallpapers \
     LatinImeDictionary \
-    Aspire \
     Apollo \
     MusicVisualization \
     NoiseField \
-    DashClock \
+    LockClock \
     openvpn \
     QuietTime 
 
@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs \
-    bash 
+    bash \
     
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
@@ -136,11 +136,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aocp/overlay/common
 
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 2
+PRODUCT_VERSION_MAJOR = 11
+PRODUCT_VERSION_MINOR = 0
 
-AOCP_VERSION_MAJOR = 6
-AOCP_VERSION_MINOR = 3.5
+AOCP_VERSION_MAJOR = 7
+AOCP_VERSION_MINOR = 0
 
     AOCP_VERSION := $(AOCP_VERSION_MAJOR).$(AOCP_VERSION_MINOR)
     

@@ -15,10 +15,6 @@ add_lunch_combo aocp_t0lteatt-userdebug
 add_lunch_combo aocp_d2spr-userdebug
 add_lunch_combo aocp_p5110-userdebug
 #
-#for combo in $(wget -o /dev/null -O - https://raw.github.com/CyanogenMod/hudson/master/cm-daily-build-targets | grep cm-10.1 | awk 'print $1'})
-#do
-#    add_lunch_combo $combo
-#done
-#
+
 
 
