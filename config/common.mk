@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
     AOCPWallpapers \
     LatinImeDictionary \
     Apollo \
+    DSPManager \
     MusicVisualization \
     NoiseField \
     LockClock \
