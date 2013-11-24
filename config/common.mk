@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs \
-    bash \
+    bash
     
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
