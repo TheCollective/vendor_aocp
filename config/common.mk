@@ -160,5 +160,3 @@ PRODUCT_COPY_FILES += \
         vendor/aocp/prebuilt/common/app/flashlight.apk:system/app/flashlight.apk
 
 endif
-
--include vendor/aocp/sepolicy/sepolicy.mk
