@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     NoiseField \
     LockClock \
     openvpn \
-    Launcher2
+    Launcher2 \
+    QuietTime
 
 # Extra tools in Aocp
 PRODUCT_PACKAGES += \
