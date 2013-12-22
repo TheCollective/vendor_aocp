@@ -109,7 +109,6 @@ PRODUCT_PACKAGES += \
     audio_effects.conf
 
 PRODUCT_PACKAGES += \
-    AOCPWallpapers \
     LatinImeDictionary \
     Apollo \
     DSPManager \

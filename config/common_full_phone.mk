@@ -10,7 +10,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
   Mms
 
-
-
-
 $(call inherit-product, vendor/aocp/config/telephony.mk)

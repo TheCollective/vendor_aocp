@@ -18,3 +18,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/aocp/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 
+$(call inherit-product, vendor/aocp/config/telephony.mk)
