@@ -88,7 +88,6 @@ include vendor/aocp/config/themes_common.mk
 
 # Required Aocp packages
 PRODUCT_PACKAGES += \
-    Camera \
     Development \
     LatinIME \
     Superuser \
@@ -104,6 +103,7 @@ PRODUCT_PACKAGES += \
     
 # DSPManager
 PRODUCT_PACKAGES += \
+    AOCPWallpapers \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
