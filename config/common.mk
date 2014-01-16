@@ -112,13 +112,11 @@ PRODUCT_PACKAGES += \
     LatinImeDictionary \
     Apollo \
     DSPManager \
-    audio_effects.conf \
-    libcyanogen-dsp \
     MusicVisualization \
     NoiseField \
     LockClock \
     openvpn \
-    Launcher2 \
+    Aspire \
     QuietTime
 
 # Extra tools in Aocp
