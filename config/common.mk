@@ -112,6 +112,8 @@ PRODUCT_PACKAGES += \
     LatinImeDictionary \
     Apollo \
     DSPManager \
+    audio_effects.conf \
+    libcyanogen-dsp \
     MusicVisualization \
     NoiseField \
     LockClock \
