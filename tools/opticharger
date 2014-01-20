@@ -13,6 +13,8 @@ QUIET=1
 BASE=`pwd`
 BRUTECRUSH="-brute"
 TMPDIR=/tmp/opticharge-$$
+NINEPATCH=0
+
 . $ANDROID_BUILD_TOP/vendor/aocp/tools/functions
 
 if [ -z "$BRUTE_PNGCRUSH" ]
@@ -41,7 +43,12 @@ then
     echo -e $CL_RED"Invalid path to apkcerts.txt, set APKCERTS to the correct path."$CL_RST
 fi
 
-if [ "$(which pngcrush)" != "" ];
+if [ "$(which pngquant)" != "" ];
+then
+    optimize_png () {
+        pngquant --speed 1 --force --ext .png $1 1> /dev/null 2> /dev/null
+    }
+elif [ "$(which pngcrush)" != "" ];
 then
     optimize_png () {
         pngcrush -q ${BRUTECRUSH} $1 ${1}.out 1> /dev/null 2> /dev/null
@@ -63,7 +70,7 @@ then
         pngout $1
     }
 else
-    echo -e $CL_RED"Please install pngcrush, optipng, or pngout"$CL_RST
+    echo -e $CL_RED"Please install pngquant, pngcrush, optipng, or pngout"$CL_RST
     exit 1;
 fi
 
@@ -122,7 +129,12 @@ then
     trap "rm -rf $TMPDIR; exit" INT TERM EXIT
     cd $TMPDIR/$NAME
     unzip -q $BASE/$1
-    for x in `find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
+    if [ "$NINEPATCH" = "1" ]; then
+        PNG_FILES=`find . -name "*.png" | tr "\n" " "`
+    else
+        PNG_FILES=`find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
+    fi
+    for x in $PNG_FILES
     do
         [ $QUIET ] || echo -e $CL_YLW"Crushing $x"$CL_RST
         optimize_png $x
